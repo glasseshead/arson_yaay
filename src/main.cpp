@@ -1,0 +1,45 @@
+#include "main.h"
+#include "lemlib/api.hpp" // IWYU pragma: keep
+#include "objects.hpp"
+#include "intake.hpp"
+
+void on_center_button() {
+	static bool pressed = false;
+	pressed = !pressed;
+	if (pressed) {
+		pros::lcd::set_text(2, "Center Button is Pressed");
+	} 
+	else {
+		pros::lcd::clear_line(2);
+	}
+}
+
+void initialize() {
+	pros::lcd::initialize();
+	pros::lcd::set_text(1, "this is david's code, please don't change it unless you know what you're doing");
+
+	pros::lcd::register_btn1_cb(on_center_button);
+}
+
+void disabled() {}
+
+void competition_initialize() {}
+
+void autonomous() {}
+
+void opcontrol() {
+	while (true) {
+		// for those who aren't familiar with aircraft controls:
+		// throttle is forward power
+		// rudder is your yaw (or your turn)
+		int throttle = controller.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+        int rudder = controller.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
+
+        // standard movement
+        chassis.arcade(throttle, rudder);
+		updateIntake();
+
+		// standard wait 10 ms
+		pros::delay(10);  
+	}
+}
