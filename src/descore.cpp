@@ -35,13 +35,15 @@ void updateDescore() {
 }
 
 void runDescore() {
-    // based on our descore wing state, we toggle it on or off
-    switch (descoreState) {
-        // descore wing down
-        case 0:
-            piston.set_value(false);
-        // descore wing up
-        case 1:
-            piston.set_value(true);
+    while (true) {
+        // based on our descore wing state, we toggle it on or off
+        switch (descoreState) {
+            // descore wing down
+            case 0:
+                piston.set_value(false);
+            // descore wing up
+            case 1:
+                piston.set_value(true);
+        }
     }
 }

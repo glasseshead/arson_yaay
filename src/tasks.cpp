@@ -4,6 +4,7 @@
 #include "intake.hpp"
 #include "descore.hpp"
 
-void task(void* param) {
-    
+void initTasks() {
+    pros::Task descoreTask(runDescore, "descore wing task");
+    pros::Task intakeTask(runIntake, "intake/outtake task");
 }

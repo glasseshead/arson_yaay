@@ -20,6 +20,8 @@ void initialize() {
 	pros::lcd::set_text(1, "this is david's code, please don't change it unless you know what you're doing");
 
 	pros::lcd::register_btn1_cb(on_center_button);
+
+	initTasks();
 }
 
 void disabled() {}
@@ -38,8 +40,6 @@ void opcontrol() {
 
         // standard movement
         chassis.arcade(throttle, rudder);
-		updateIntake();
-		updateDescore();
 
 		// standard wait 10 ms
 		pros::delay(10);  

@@ -60,16 +60,18 @@ void updateIntake() {
 }
 
 void runIntake() {
-    // based on our intake state, we toggle it on or off
-    switch (intakeState) {
-        // intaking
-        case 1:
-            intake.move_voltage(127);
-        // outtaking
-        case 2:
-            intake.move_voltage(-127);
-        // off
-        case 0:
-            intake.move_voltage(0);
+    while (true) {
+        // based on our intake state, we toggle it on or off
+        switch (intakeState) {
+            // intaking
+            case 1:
+                intake.move_voltage(127);
+            // outtaking
+            case 2:
+                intake.move_voltage(-127);
+            // off
+            case 0:
+                intake.move_voltage(0);
+        }
     }
 }
