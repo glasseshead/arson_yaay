@@ -1,7 +1,7 @@
 {
   "py/object": "pros.conductor.project.Project",
   "py/state": {
-    "project_name": "NighInduTrauExpe",
+    "project_name": "arson_yaay",
     "target": "v5",
     "templates": {
       "LemLib": {
@@ -635,7 +635,7 @@
       }
     },
     "upload_options": {
-      "description": "David's rather questionable code. This encompasses both autonomous and teleoperated periods.",
+      "description": "arson is very fun",
       "icon": "pros"
     },
     "use_early_access": false
