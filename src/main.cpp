@@ -3,6 +3,8 @@
 #include "objects.hpp"
 #include "intake.hpp"
 #include "descore.hpp"
+#include "matcloader.hpp"
+#include "tasks.hpp"
 
 void on_center_button() {
 	static bool pressed = false;

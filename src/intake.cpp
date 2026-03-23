@@ -1,5 +1,3 @@
-// TODO: Replace intakePressed with intakePressed_intaking & intakePressed_outtaking
-
 #include "intake.hpp"
 
 // reset intake values
@@ -16,7 +14,7 @@ void updateIntake() {
     // state = 0: off
 
     // if R1 is pressed
-    if (controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) {
+    if (controller.get_digital(intakeControl)) {
         if (!intakePressed_intaking) {
             // if it is on turn it off
             if(intakeState == 1) {
@@ -38,7 +36,7 @@ void updateIntake() {
     }
 
     // if R2 is pressed
-    if (controller.get_digital(pros::E_CONTROLLER_DIGITAL_L2)) {
+    if (controller.get_digital(outtakeControl)) {
         if (!intakePressed_outtaking) {
             // if it is on turn it off
             if(intakeState == 2) {
@@ -75,6 +73,7 @@ void runIntake() {
             // off
             case 0:
                 intake.move_voltage(0);
+                storage.move_voltage(0);
         }
     }
 }

@@ -12,7 +12,7 @@ void updateScore() {
     // state = 0: off
 
     // if L1 is pressed
-    if (controller.get_digital(pros::E_CONTROLLER_DIGITAL_L1)) {
+    if (controller.get_digital(scoreControl)) {
         if (!scorePressed_intaking) {
             // if it is on turn it off
             if(scoreState == 1) {
@@ -45,6 +45,7 @@ void runScore() {
             // off
             case 0:
                 score.move_voltage(0);
+                storage.move_voltage(0);
         }
     }
 }

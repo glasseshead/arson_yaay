@@ -1,7 +1,7 @@
 # arson_yaay by glasseshead (David Sun)
-Solo programmed TeleOperated (Driver-Controlled) drive for a robot based off of 9123X Shanghai Ruiguan Team 9123X
+Solo programmed TeleOperated (Driver-Controlled) drive for a robot based off of 5776K DV Kiwi Krew
 
-Thanks Zachary & Mooncy from 5776K
+Thanks Zachary, Aakanksh, & Mooncy from 5776K
 
 ## Features
 - ~~Arcade drivetrain with rudder and throttle~~
@@ -10,10 +10,10 @@ Thanks Zachary & Mooncy from 5776K
 - ~~Top score roller~~
 - ~~Mid goal scoring~~
 - ~~Descore piston wing~~
-- Matchloader piston wing
+- ~~Matchloader pistons~~
 
 ## Notes
-- Has everything defined except for ports and measurements
+- ~~Has everything defined except for ports and measurements~~
 - ~~Fresh LemLib project~~
 - ~~Personal GitHub repository~~
 - ~~PID and chassis variables all declared~~
@@ -29,9 +29,9 @@ Thanks Zachary & Mooncy from 5776K
 - Right Joystick X: Rudder
 - Right Joystick Y: 
 - DPad Up: 
-- DPad Down: Matchloader down
+- DPad Down: Matchloader toggle
 - DPad Left: 
-- DPad Right: Matchloader up
+- DPad Right: Mid Goal
 - X: 
 - Y: 
 - A:

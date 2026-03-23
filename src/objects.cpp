@@ -2,6 +2,14 @@
 
 pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
+// controls mapping
+scoreControl = pros::E_CONTROLLER_DIGITAL_L1;
+outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
+intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
+descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
+matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
+midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
+
 // motor groups
 pros::MotorGroup left_mg({0, 0, 0}, pros::v5::MotorGears::blue);
 pros::MotorGroup right_mg({0, 0, 0}, pros::v5::MotorGears::blue);
@@ -22,8 +30,8 @@ pros::ADIAnalogOut descorePiston ('A');
 pros::ADIAnalogOut midGoalPiston ('A');
 
 // matchloader piston mapping
-pros::ADIAnalogOut matchloader_L ('A');
-pros::ADIAnalogOut matchloader_R ('A');
+pros::ADIAnalogOut matchLoaderPiston_L ('A');
+pros::ADIAnalogOut matchLoaderPiston_R ('A');
 
 // imu mapping
 pros::Imu imu(1);

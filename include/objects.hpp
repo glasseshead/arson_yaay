@@ -35,3 +35,15 @@ extern pros::ADIAnalogOut descorePiston;
 
 // mid goal piston
 extern pros::ADIAnalogOut midGoalPiston;
+
+// matchloader pistons
+extern pros::ADIAnalogOut matchLoaderPiston_L;
+extern pros::ADIAnalogOut matchLoaderPiston_R;
+
+// controls
+extern scoreControl;
+extern outtakeControl;
+extern intakeControl;
+extern descoreControl;
+extern matchloaderControl;
+extern midGoalControl;

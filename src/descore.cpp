@@ -12,7 +12,7 @@ void updateDescore() {
     // state = 1: up
 
     // if a is pressed
-    if (controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) {
+    if (controller.get_digital(descoreControl)) {
         if (!descorePressed) {
             // if descore wing is down put it up
             if(descoreState == 0) {
