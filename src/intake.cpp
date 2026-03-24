@@ -65,15 +65,12 @@ void runIntake() {
             // intaking
             case 1:
                 intake.move_voltage(127);
-                storage.move_voltage(127);
             // outtaking
             case 2:
                 intake.move_voltage(-127);
-                storage.move_voltage(-127);
             // off
             case 0:
                 intake.move_voltage(0);
-                storage.move_voltage(0);
         }
     }
 }

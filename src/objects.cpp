@@ -18,9 +18,6 @@ pros::MotorGroup right_mg({0, 0, 0}, pros::v5::MotorGears::blue);
 // intake mapping
 pros::Motor intake(0, pros::v5::MotorGears::blue);
 
-// storage mapping
-pros::Motor storage(0, pros::v5::MotorGears::blue);
-
 // score mapping
 pros::Motor score(0, pros::v5::MotorGears::blue);
 

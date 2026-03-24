@@ -5,9 +5,6 @@
 // intake motor
 extern pros::Motor intake;
 
-// storage motor
-extern pros::Motor storage;
-
 // score motor
 extern pros::Motor score;
 
