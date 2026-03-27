@@ -3,6 +3,10 @@ Solo programmed TeleOperated (Driver-Controlled) drive for a robot based off of 
 
 Thanks Zachary, Aakanksh, & Mooncy from 5776K; Iris from 5776A; Vidit from 5776E
 
+Partially complete documentation below:
+
+https://docs.google.com/document/d/1RQhu_w1ufEY5RgC05x2ohlO6OhAGyMAY3BCKpGnV530/edit?tab=t.0
+
 ## Features
 - ~~Arcade drivetrain with rudder and throttle~~
 - ~~3-state intake (off, intaking, outtaking)~~
@@ -18,21 +22,3 @@ Thanks Zachary, Aakanksh, & Mooncy from 5776K; Iris from 5776A; Vidit from 5776E
 - ~~Personal GitHub repository~~
 - ~~PID and chassis variables all declared~~
 - ~~Gains and error ranges are zero~~
-
-## Controls
-- Left Trigger/L1: Score/Trapdoor
-- Left Bumper/L2: Outtake
-- Right Trigger/R1: Intake + Storage
-- Right Bumper/R2: Descore Wing
-- Left Joystick X: 
-- Left Joystick Y: Throttle
-- Right Joystick X: Rudder
-- Right Joystick Y: 
-- DPad Up: 
-- DPad Down: Matchloader toggle
-- DPad Left: 
-- DPad Right: Mid Goal
-- X: 
-- Y: 
-- A:
-- B:
