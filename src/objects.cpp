@@ -3,23 +3,6 @@
 
 pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
-// TODO: Configure your controls to your preference.
-// Original Controls:
-// scoreControl = pros::E_CONTROLLER_DIGITAL_L1;
-// outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
-// intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
-// descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
-// matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
-// midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
-
-// controls mapping
-pros::controller_digital_e_t scoreControl = pros::E_CONTROLLER_DIGITAL_L1;
-pros::controller_digital_e_t outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
-pros::controller_digital_e_t intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
-pros::controller_digital_e_t descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
-pros::controller_digital_e_t matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
-pros::controller_digital_e_t midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
-
 // TODO: Configure your ports based on your robot.
 std::int8_t LEFT_MG_0 = 0;
 std::int8_t LEFT_MG_1 = 0;
@@ -41,6 +24,25 @@ char MATCHLOADER_PISTON_L = 'A';
 char MATCHLOADER_PISTON_R = 'A';
 
 std::int8_t IMU_SENSOR = 0;
+
+// TODO: Configure your controls to your preference.
+// Original Controls:
+// scoreControl = pros::E_CONTROLLER_DIGITAL_L1;
+// outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
+// intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
+// descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
+// matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
+// midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
+
+// controls mapping
+pros::controller_digital_e_t scoreControl = pros::E_CONTROLLER_DIGITAL_L1;
+pros::controller_digital_e_t outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
+pros::controller_digital_e_t intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
+pros::controller_digital_e_t descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
+pros::controller_digital_e_t matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
+pros::controller_digital_e_t midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
+
+
 
 // motor groups
 pros::MotorGroup left_mg({LEFT_MG_0, LEFT_MG_1, LEFT_MG_2}, pros::v5::MotorGears::blue);
