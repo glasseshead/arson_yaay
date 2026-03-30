@@ -3,8 +3,11 @@
 #include "objects.hpp"
 #include "tasks.hpp"
 #include "intake.hpp"
-#include "MoGoClamp.hpp"
+#include "descore.hpp"
+#include "matchloader.hpp"
+#include "midgoal.hpp"
 #include "score.hpp"
+#include "trapdoor.hpp"
 
 void on_center_button() {
 	static bool pressed = false;
@@ -52,7 +55,10 @@ void opcontrol() {
 
 		updateIntake();
 		updateScore();
-		updateMoGoClamp();
+		updateDescore();
+		updateMidGoal();
+		updateMatchLoader();
+		updateTrapdoor();
 
 		// standard wait 10 ms
 		pros::delay(10);  
