@@ -22,7 +22,7 @@ std::int8_t SCORE_MOTOR = 0;
 char DESCORE_PISTON = 'A';
 char MID_GOAL_PISTON = 'A';
 char TRAPDOOR_PISTON = 'A';
-char MATCHLOADER_PISTONS = 'A';
+char MoGoClamp_PISTONS = 'A';
 
 std::int8_t IMU_SENSOR = 0;
 
@@ -32,7 +32,7 @@ std::int8_t IMU_SENSOR = 0;
 // outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
 // intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
 // descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
-// matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
+// MoGoClampControl = pros::E_CONTROLLER_DIGITAL_DOWN;
 // midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
 // trapdoorControl = pros::E_CONTROLLER_DIGITAL_UP;
 
@@ -41,7 +41,7 @@ pros::controller_digital_e_t scoreControl = pros::E_CONTROLLER_DIGITAL_L1;
 pros::controller_digital_e_t outtakeControl = pros::E_CONTROLLER_DIGITAL_L2;
 pros::controller_digital_e_t intakeControl = pros::E_CONTROLLER_DIGITAL_R1;
 pros::controller_digital_e_t descoreControl = pros::E_CONTROLLER_DIGITAL_R2;
-pros::controller_digital_e_t matchloaderControl = pros::E_CONTROLLER_DIGITAL_DOWN;
+pros::controller_digital_e_t MoGoClampControl = pros::E_CONTROLLER_DIGITAL_DOWN;
 pros::controller_digital_e_t midGoalControl = pros::E_CONTROLLER_DIGITAL_RIGHT;
 pros::controller_digital_e_t trapdoorControl = pros::E_CONTROLLER_DIGITAL_UP;
 
@@ -68,8 +68,8 @@ pros::adi::AnalogOut midGoalPiston (MID_GOAL_PISTON);
 // trapdoor piston mapping
 pros::adi::AnalogOut trapdoorPiston (TRAPDOOR_PISTON);
 
-// matchloader piston mapping
-pros::adi::AnalogOut matchLoaderPistons (MATCHLOADER_PISTONS);
+// MoGoClamp piston mapping
+pros::adi::AnalogOut MoGoClampPistons (MoGoClamp_PISTONS);
 
 // imu mapping
 pros::Imu imu(IMU_SENSOR);

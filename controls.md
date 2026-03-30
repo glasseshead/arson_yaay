@@ -17,7 +17,7 @@
 **Descore Piston Wing**: R2 (Click)
 *Click once to activate, click again to deactivate*
 
-**Matchloader Pistons**: Down (Click)
+**MoGoClamp Pistons**: Down (Click)
 *Click once to activate, click again to deactivate*
 
 **Mid-Goal Piston**: Right (Click)

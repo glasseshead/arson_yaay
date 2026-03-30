@@ -14,7 +14,7 @@ https://docs.google.com/document/d/1RQhu_w1ufEY5RgC05x2ohlO6OhAGyMAY3BCKpGnV530/
 - ~~Top score roller~~
 - ~~Mid goal scoring~~
 - ~~Descore piston wing~~
-- ~~Matchloader pistons~~
+- ~~MoGoClamp pistons~~
 
 ## Notes
 - ~~Has everything defined except for ports and measurements~~
