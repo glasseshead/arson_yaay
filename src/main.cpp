@@ -40,6 +40,14 @@ void competition_initialize() {
 }
 
 void autonomous() {
+	// ZERO 33.6 106.19999999999999 0.0
+	chassis.setPose(0, 0, 0, 700);
+	chassis.moveToPose(0.0, 0.0, 0.0, 700);
+	chassis.moveToPose(-1.5, -51.599999999999994, 0.0, 700);
+	chassis.moveToPose(39.9, -64.8, 0.0, 700);
+	chassis.moveToPose(27.0, -18.9, 0.0, 700);
+	chassis.moveToPose(-32.699999999999996, -28.799999999999997, 0.0, 700);
+	chassis.moveToPose(59.099999999999994, -46.199999999999996, 0.0, 700);
 }
 
 void opcontrol() {
